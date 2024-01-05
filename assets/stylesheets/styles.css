@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Poppins", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --bg-color: #eddcd2;
+  --primary-color: #cb997e;
+  --secondary-color: #6a6a5d;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -18,54 +19,74 @@
 }
 /* Variables end */
 
-html {
-  scroll-behavior: smooth;
+html, body {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+    font-style: normal;
+    padding: 0;
+    margin: 0;
 }
 
 /* CSS Resets */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 a:hover {
-  color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-body {
-  font-family: var(--font-family);
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
 }
 
 /* Navigaton bar */
 nav {
     position: sticky;
-    top: 0;
     left: 0;
+    right: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: #fbf5f2;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
+}
 
 nav h1 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     transition: var(--transition);
 }
 
@@ -80,69 +101,204 @@ nav ul {
 }
 
 nav ul li {
-    font-weight: var(--bold-font)
+    font-weight: var(--bold-font);
 }
 
 /* Hero Section */
 .hero {
     display: flex;
+    height: 100vh;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
+    flex-wrap: wrap;
+    align-content: center;
     margin: auto;
 }
 
-/* Home Section */
-.more-about {
-background-color: var(--bg-color);
-padding: 1rem 6rem;
+.hero-landing {
+    max-width: 90%;
+    text-align: center;
 }
 
-.more-about h2 {
-margin-bottom: var(--bottom-margin);
-text-align: center;
+#hero-title {
+    max-width: 100%;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
-.more-about p {
-line-height: var(--line-height);
-padding: 0.4rem;
+#hero-text {
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-size: 100%;
+}
+
+#hero-img {
+    width:500px;
+}
+
+/* About Section */
+#about-section {
+    background-color: var(--secondary-color);
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.hidden-link:link {
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: default;
+}
+
+#coffee-pic {
+    margin: 40px;
+    height: 37.5rem;
+    margin-top: 20px;
+    border-top: 20px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+#pic-caption {
+    margin: 0;
+    top: -660px;
+    position: relative;
+    font-family: "Cascadia Code", sans-serif;
+    color: #f8f8f2;
+}
+
+#console {
+	margin: 40px;
+	margin-top: 20px;
+	padding: 30px;
+	overflow-y: auto;
+	line-height: 22px;
+	height: 390px;
+	width: 550px;
+	font-size: 90%;
+	font-family: "Cascadia Code", sans-serif;
+	border-top: 20px solid var(--primary-color);
+	border-radius: 4px;
+    background-color: #272822;
+}
+
+#console-caption {
+    margin: 0;
+    position: relative;
+    right: 5px;
+    bottom: -60px;
+	font-family: "Cascadia Code", sans-serif;
+    color: #f8f8f2;
+}
+
+#console-container {
+    width: 100%;
+}
+
+#about h1 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+    font-size: 30px;
+}
+
+#console span {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+#console ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+#console a {
+    text-decoration: underline;
+}
+
+.first-color {
+    color: #e6db74;
+}
+
+.second-color {
+    color: #66d9ef;
+}
+
+.third-color {
+    color: #f8f8f2;
+}
+
+.fourth-color {
+    color: #75715e;
+}
+
+.fifth-color {
+    color: #ae81ff;
+}
+
+.sixth-color {
+    color: #a6e22e;
+}
+
+/* Skills Section */
+#skills-section {
+    background-color: var(--primary-color);
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.skills-header {
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
 }
 
 /* Project Section */
 .projects {
-background-color: var(--bg-color);
-padding: 32px 0;
-margin-top: 2rem;
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
 }
 
 .project-pic {
-width: 65%;
-height: 60%;
+    width: 65%;
+    height: 60%;
 }
 
 .projects-container {
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer */
-.container-col {
+#footer {
     height: 6em;
     text-align: center;
     margin: 2rem 0 0;
 }
 
-.container-row * {
+#links * {
     padding: 6px;
     margin-bottom: 6px;
 }
-
-.container-row a {
+#links a {
     transition: .4s;
 }
 
-.container-row a:hover {
+#links a:hover {
     color: #8d8d8d;
 }

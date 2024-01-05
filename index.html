@@ -12,147 +12,253 @@
 
     <body>
 
-        <!-- Navigation bar -->
-        <nav>
-            <h1>Brandon Song</h1>
-            <ul class="navigation">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>    
-            </ul>
-        </nav>
+    <!-- Navigation bar -->
+    <nav>
+        <h1><a href="#hero">Brandon Song</a></h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+        </ul>
+    </nav>
 
         <!-- Hero Section -->
-        <section class="hero" id="about">
-            <div class="bio">
-                <h2 class="bio-title">About Me</h2>
-                <p class="bio-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                    dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                    inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                    repudiandae quos!
-
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                    dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                    inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                    repudiandae quos!
-
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                    dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                    inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                    repudiandae quos!
-                </p>
+        <section class="hero" id="hero">
+            <div class="container row">
+                <img 
+                src="assets/images/kermit.png"
+                alt="kermit"
+                loading="lazy"
+                id="hero-img"
+                />
+                <div class="container col" id="hero-landing">
+                    <h2 id="hero-title">Brandon Song</h2>
+                    <small><p id="hero-text">it's not easy being green.</p></small>
+                </div>
             </div>
         </section>
 
-        <!-- Home Section -->
-        <section class="more-about">
-            <h2>More About Me</h2>
-            <p>
-                {
-                    "name": "Brandon Song",
-                    "education": {
-                      "year": "fourth",
-                      "major": "Computer Science",
-                      "school": "UT Austin"
-                    },
-                    "looking_for": {
-                      "position": "Software Engineer Internship",
-                      "when": "Summer 2024"
-                    },
-                    "resume": {
-                        "link": "brandonsong.pdf"
-                    },
-                    "contactInfo": "email, github, linkedIn"
-                  }
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-              nostrum dolor minus, libero delectus praesentium perferendis
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-              consequuntur labore? Ea totam voluptas amet!
-            </p>
-          </section>
-          
+        <!-- About Section -->
+        <section class="container col" id="about-section">
+            <h1> <a class="hidden-link" href="https://imgur.com/j3CHqZJ">Hello there</a></h1>
+            <img src="assets/images/coffee_pic.JPG" id="coffee-pic">
+            <p id="console-caption">about_me.json</p>
+            <p id="pic-caption">coffee_pic.jpg</p>
+            <div class="container row" id="console-container">
+                <div id="console">
+                    <span class="first-color">{</span>
+                    <br>
+                    <ul>
+                        <span class="second-color">"name"</span><span class="third-color">: </span><span class="fourth-color">"Brandon Song"</span><span class="third-color">,</span>
+                        <br>
+                        <span class="second-color">"education"</span><span class="third-color">: </span><span class="fifth-color">{</span>
+                        <br>
+                        <ul>
+                            <span class="second-color">"year"</span><span class="third-color">: </span><span class="fourth-color">"fourth"</span><span class="third-color">,</span>
+                            <br>
+                            <span class="second-color">"major"</span><span class="third-color">: </span><span class="fourth-color">"Computer Science"</span><span class="third-color">,</span>
+                            <br>
+                            <span class="second-color">"school"</span><span class="third-color">: </span><span class="fourth-color">"UT Austin"</span><span class="third-color">,</span>
+                        </ul>
+                        <span class="fifth-color">}</span><span class="third-color">,</span>
+                        <br>
+                        <span class="second-color">"lookingFor"</span><span class="third-color">: </span><span class="fifth-color">{</span>
+                        <br>
+                        <ul>
+                            <span class="second-color">"what"</span><span class="third-color">: </span><span class="fourth-color">"SWE Internship"</span><span class="third-color">,</span>
+                            <br>                            
+                            <span class="second-color">"when"</span><span class="third-color">: </span><span class="fourth-color">"Summer 2024"</span><span class="third-color">,</span>
+                            <br>
+                        </ul>
+                        <span class="fifth-color">}</span><!--
+                        --><span class="third-color">,</span>
+                        <br>
+                        <span class="second-color">"resume"</span><span class="third-color">: </span><span class="fifth-color">{</span>
+                            <br>
+                            <ul>
+                                <span class="second-color">"link"</span><span class="third-color">: </span><span class="sixth-color">"</span><span><a href="assets/BrandonSongResume.pdf" class="sixth-color">Brandon Song Resume.pdf</a></span><span class="sixth-color">"</span><span class="third-color">,</span>
+                                <br>                            
+                            </ul>
+                        <span class="fifth-color">}</span><!--
+                        --><span class="third-color">,</span>
+                        <br>
+                        <span class="second-color">"contactInfo"</span><span class="third-color">: </span><span class="fifth-color">{</span>
+                        <br>
+                        <ul>
+                            <span class="second-color">"Email"</span><span class="third-color">: </span><span class="sixth-color">"</span><span><a href="mailto:songbrandon7@gmail.com" class="sixth-color">songbrandon7 at gmail dot com</a></span><span class="sixth-color">"</span><span class="third-color">,</span>
+                            <br>      
+                            <span class="second-color">"LinkedIn"</span><span class="third-color">: </span><span class="sixth-color">"</span><span><a href="https://www.linkedin.com/in/brandon-song-carl/" target="_blank" class="sixth-color">Connect with me!</a></span><span class="sixth-color">"</span><span class="third-color">,</span>
+                            <br>                            
+                            <span class="second-color">"Github"</span><span class="third-color">: </span><span class="sixth-color">"</span><span><a href="https://github.com/defkorean" target="_blank" class="sixth-color">See what I'm currently working on</a></span><span class="sixth-color">🙈"</span><span class="third-color">,</span>
+                            <br>
+                        </ul>   
+                        <span class="fifth-color">}</span>           
+                    </ul>
+                    <span class="first-color">}</span>
+                </div>
+            </div>
+        </section>
+        
         <!-- Skills section -->
+        <section class="container col skills" id="skills-section">
+            <h1 id="skills-header">Skills</h1>
+            <div class="skills-wrapper">
+                <div class="first-set">
+                  <img
+                    src="assets/icons/icons8-c++.svg"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                  />
+                  <img
+                    src="assets/icons/python.svg"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                  />
+                  <img
+                    src="assets/icons/swift.svg"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                  />
+                </div>
+        
+                <div class="second-set animate__animated animate__pulse">
+                  <img
+                    src="assets/icons/html.svg"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                  />
+                  <img
+                    src="assets/icons/css.svg"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                  />
+                  <img
+                    src="assets/icons/javascript.svg"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                  />
+                </div>
+
+                <div class="third-set animate__animated animate__pulse">
+                    <img
+                      src="assets/icons/graphql.svg"
+                      alt=""
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="assets/icons/react.svg"
+                      alt=""
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="assets/icons/django.svg"
+                      alt=""
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                  </div>
+
+                  <div class="fourth-set animate__animated animate__pulse">
+                    <img
+                      src="assets/icons/git.svg"
+                      alt=""
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="assets/icons/java.svg"
+                      alt=""
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                  </div>
+        </section>
 
         <!-- Projects section -->
         <section class="projects" id="projects">
             <h2 class="projects-title">Projects</h2>
             <div class="projects-container">
 
-              <div class="project-container project-card">
+            <div class="project-container project-card">
                 <img
-                  src="assets/images/expenseTracker.png"
-                  alt="Lorem, ipsum"
-                  loading="lazy"
-                  class="project-pic"
+                src="assets/images/expenseTracker.png"
+                alt="Lorem, ipsum"
+                loading="lazy"
+                class="project-pic"
                 />
                 <h3 class="project-title">Lorem, ipsum</h3>
                 <p class="project-details">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ratione vel inventore labore commodi modi quos culpa aut saepe!
-                  Alias!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi quos culpa aut saepe!
+                Alias!
                 </p>
                 <a href="#" target="_blank" class="project-link">Github link</a>
-              </div>
+            </div>
 
-              <div class="project-container project-card">
+            <div class="project-container project-card">
                 <img
-                  src="assets/images/netflixClone.png"
-                  alt="Lorem, ipsum"
-                  loading="lazy"
-                  class="project-pic"
+                src="assets/images/netflixClone.png"
+                alt="Lorem, ipsum"
+                loading="lazy"
+                class="project-pic"
                 />
                 <h3 class="project-title">Lorem, ipsum</h3>
                 <p class="project-details">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ratione vel inventore labore commodi modi quos culpa aut saepe!
-                  Alias!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi quos culpa aut saepe!
+                Alias!
                 </p>
                 <a href="#" target="_blank" class="project-link">Github link</a>
-              </div>
+            </div>
 
-              <div class="project-container project-card">
+            <div class="project-container project-card">
                 <img
-                  src="assets/images/greenyEarth.png"
-                  alt="Lorem, ipsum"
-                  loading="lazy"
-                  class="project-pic"
+                src="assets/images/greenyEarth.png"
+                alt="Lorem, ipsum"
+                loading="lazy"
+                class="project-pic"
                 />
                 <h3 class="project-title">Lorem, ipsum</h3>
                 <p class="project-details">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ratione vel inventore labore commodi modi quos culpa aut saepe!
-                  Alias!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi quos culpa aut saepe!
+                Alias!
                 </p>
                 <a href="#" target="_blank" class="project-link">Github link</a>
-              </div>
-
             </div>
-          </section>
 
-        <!-- Social accounts - Fixed to the right -->
+        </div>
+        </section>
 
-        <!-- Scroll to top -->
+    <!-- Social accounts - Fixed to the right -->
 
-        <!-- Footer section -->
-        <footer class="container-col">
-            <div class="container-row">
-                <a href="https://www.linkedin.com/in/brandon-song-carl/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/defkorean" target="_blank">Github</a>
-                <a href="mailto:songbrandon7@gmail.com" target="_blank">Email</a>
-            </div>
-            <div>
-                <small><p id="copyright">Special thanks to Kolade Chris, Nathan Cheng, and Joonbo Shim</p></small>
-            </div>
-            <div>
-                <small>&copy; 2024 carl</small>
-            </div>
-        </footer>
+    <!-- Scroll to top -->
+
+    <!-- Footer section -->
+    <footer class="container col" id="footer">
+        <div class="container row" id="links">
+            <a href="https://www.linkedin.com/in/brandon-song-carl/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/defkorean" target="_blank">Github</a>
+            <a href="mailto:songbrandon7@gmail.com" target="_blank">Email</a>
+        </div>
+        <div>
+            <p id="copyright">Special thanks to Kolade Chris, Nathan Cheng, and Joonbo Shim</p>
+        </div>
+        <div>
+            <small><p id="copyright">Design heavily inspired by Christine Nguyen</p></small>
+        </div>
+        <div>
+            <small>&copy; 2024 carl</small>
+        </div>
+    </footer>
 
         <!-- Website scripts -->
 
