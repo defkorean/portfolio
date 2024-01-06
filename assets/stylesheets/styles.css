@@ -85,16 +85,17 @@ a:hover {
 
 /* Navigaton bar */
 nav {
-    position: sticky;
+    position: fixed;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: #fbf5f2;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s;
 }
 
 nav h1 {
@@ -156,7 +157,7 @@ nav ul li {
 /* About Section */
 #about-section {
     background-color: var(--secondary-color);
-    padding: 50px;
+    padding-top: 80px;
     min-height: 100vh;
 }
 
@@ -257,7 +258,7 @@ nav ul li {
 /* Skills Section */
 #skills-section {
     background-color: var(--primary-color);
-    padding: 50px;
+    padding-top: 80px;
     min-height: 100vh;
 }
 
@@ -280,7 +281,7 @@ nav ul li {
 
 /* Project Section */
 #project-section {
-    padding: 50px;
+    padding-top: 80px;
 }
 
 #buttons {
@@ -312,6 +313,11 @@ nav ul li {
     height: 300px;
     width: 300px;
     margin: 5%;
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .project-img {
