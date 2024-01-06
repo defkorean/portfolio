@@ -31,6 +31,10 @@ html, body {
     margin: 0;
 }
 
+h1 {
+    font-weight: 300;
+}
+
 /* CSS Resets */
 * {
     margin: 0;
@@ -49,6 +53,18 @@ a {
 
 a:hover {
     color: var(--primary-color);
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.title {
+    max-width: 100%;
+    font-size: 200%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -245,10 +261,6 @@ nav ul li {
     min-height: 100vh;
 }
 
-.skills-header {
-    margin-bottom: 1rem;
-}
-
 .skills-wrapper img {
     padding: 1.25rem;
 }
@@ -259,7 +271,7 @@ nav ul li {
 }
 
 .icon-card {
-    background-color: #fff;
+    background-color: #fbf5f2;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
@@ -267,27 +279,46 @@ nav ul li {
 }
 
 /* Project Section */
-.projects {
-    background-color: var(--bg-color);
-    padding: 32px 0;
-    margin-top: 2rem;
+#project-section {
+    padding: 50px;
 }
 
-.project-pic {
-    width: 65%;
-    height: 60%;
-}
-
-.projects-container {
+#buttons {
+    margin-top: 1.25rem;
+    font-family: var(--font-family);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.filter-button {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #8a998e;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+.filter-button:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.project-container {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 5%;
 }
 
 /* Footer */
 #footer {
     height: 6em;
     text-align: center;
+    background-color: #fbf5f2;
     margin: 2rem 0 0;
 }
 
@@ -295,6 +326,7 @@ nav ul li {
     padding: 6px;
     margin-bottom: 6px;
 }
+
 #links a {
     transition: .4s;
 }

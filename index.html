@@ -14,16 +14,17 @@
 
     <!-- Navigation bar -->
     <nav>
-        <h1><a href="#hero">Brandon Song</a></h1>
+        <h1><a href="#hero-section">Brandon Song</a></h1>
         <ul class="navigation">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about-section" class="nav-link">About</a></li>
+            <li><a href="#skills-section" class="nav-link">Skills</a></li>
+            <li><a href="#project-section" class="nav-link">Projects</a></li>
         </ul>
     </nav>
 
+    <div class="wrapper">
         <!-- Hero Section -->
-        <section class="hero" id="hero">
+        <section class="hero" id="hero-section">
             <div class="container row">
                 <img 
                 src="assets/images/kermit.png"
@@ -40,7 +41,7 @@
 
         <!-- About Section -->
         <section class="container col" id="about-section">
-            <h1> <a class="hidden-link" href="https://imgur.com/j3CHqZJ">Hello there</a></h1>
+            <h1> <a class="hidden-link title" href="https://imgur.com/j3CHqZJ">Hello there</a></h1>
             <img src="assets/images/coffee_pic.JPG" id="coffee-pic">
             <p id="console-caption">about_me.json</p>
             <p id="pic-caption">coffee_pic.jpg</p>
@@ -100,145 +101,163 @@
         </section>
         
         <!-- Skills section -->
-        <section class="container col skills" id="skills-section">
-            <h1 id="skills-header">Skills</h1>
+        <section class="container col" id="skills-section">
+
+            <h1 class="title">Skills</h1>
+            
             <div class="skills-wrapper">
                 <div class="first-set">
-                  <img
+                    <img
                     src="assets/icons/icons8-c++.svg"
                     alt=""
                     loading="lazy"
                     class="icon icon-card"
-                  />
-                  <img
+                    />
+                    <img
                     src="assets/icons/python.svg"
                     alt=""
                     loading="lazy"
                     class="icon icon-card"
-                  />
-                  <img
+                    />
+                    <img
                     src="assets/icons/swift.svg"
                     alt=""
                     loading="lazy"
                     class="icon icon-card"
-                  />
+                    />
                 </div>
         
                 <div class="second-set animate__animated animate__pulse">
-                  <img
+                    <img
                     src="assets/icons/html.svg"
                     alt=""
                     loading="lazy"
                     class="icon icon-card"
-                  />
-                  <img
+                    />
+                    <img
                     src="assets/icons/css.svg"
                     alt=""
                     loading="lazy"
                     class="icon icon-card"
-                  />
-                  <img
+                    />
+                    <img
                     src="assets/icons/javascript.svg"
                     alt=""
                     loading="lazy"
                     class="icon icon-card"
-                  />
+                    />
                 </div>
 
                 <div class="third-set animate__animated animate__pulse">
                     <img
-                      src="assets/icons/graphql.svg"
-                      alt=""
-                      loading="lazy"
-                      class="icon icon-card"
+                        src="assets/icons/graphql.svg"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
                     />
                     <img
-                      src="assets/icons/react.svg"
-                      alt=""
-                      loading="lazy"
-                      class="icon icon-card"
+                        src="assets/icons/react.svg"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
                     />
                     <img
-                      src="assets/icons/django.svg"
-                      alt=""
-                      loading="lazy"
-                      class="icon icon-card"
+                        src="assets/icons/django.svg"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
                     />
-                  </div>
+                    </div>
 
-                  <div class="fourth-set animate__animated animate__pulse">
+                    <div class="fourth-set animate__animated animate__pulse">
                     <img
-                      src="assets/icons/git.svg"
-                      alt=""
-                      loading="lazy"
-                      class="icon icon-card"
+                        src="assets/icons/git.svg"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
                     />
                     <img
-                      src="assets/icons/java.svg"
-                      alt=""
-                      loading="lazy"
-                      class="icon icon-card"
+                        src="assets/icons/java.svg"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
                     />
-                  </div>
+                    </div>
         </section>
 
         <!-- Projects section -->
-        <section class="projects" id="projects">
-            <h2 class="projects-title">Projects</h2>
-            <div class="projects-container">
+        <section class="container col" id="project-section">
+                
+            <h1 class="title">Projects</h1>
 
-            <div class="project-container project-card">
-                <img
-                src="assets/images/expenseTracker.png"
-                alt="Lorem, ipsum"
-                loading="lazy"
-                class="project-pic"
-                />
-                <h3 class="project-title">Lorem, ipsum</h3>
-                <p class="project-details">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                ratione vel inventore labore commodi modi quos culpa aut saepe!
-                Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Github link</a>
+            <!-- Filter buttons -->
+            <div class="container row" id="buttons">
+                <button class="filter-button active">All</button>
+                <button class="filter-button">Mobile Computing</button>
+                <button class="filter-button">Web Development</button>
+                <button class="filter-button">Machine Learning</button>
+                <button class="filter-button">Systems</button>
             </div>
 
-            <div class="project-container project-card">
-                <img
-                src="assets/images/netflixClone.png"
-                alt="Lorem, ipsum"
-                loading="lazy"
-                class="project-pic"
-                />
-                <h3 class="project-title">Lorem, ipsum</h3>
-                <p class="project-details">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                ratione vel inventore labore commodi modi quos culpa aut saepe!
-                Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Github link</a>
-            </div>
+            <div class="container row" id="project-container">
 
-            <div class="project-container project-card">
-                <img
-                src="assets/images/greenyEarth.png"
-                alt="Lorem, ipsum"
-                loading="lazy"
-                class="project-pic"
-                />
-                <h3 class="project-title">Lorem, ipsum</h3>
-                <p class="project-details">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                ratione vel inventore labore commodi modi quos culpa aut saepe!
-                Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Github link</a>
-            </div>
+                <div class="project-container webDev">
+                    <img
+                    src="assets/images/expenseTracker.png"
+                    alt="project 1"
+                    loading="lazy"
+                    class="project-img"
+                    />
+                    <div class="project-details container col">
+                        <div class="img-details">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                            ratione vel inventore labore commodi modi quos culpa aut saepe!
+                            Alias!</p>
+                            <i>Java</i>
+                            <a href="#" target="_blank" class="project-link">Github link</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-container webDev">
+                    <img
+                    src="assets/images/expenseTracker.png"
+                    alt="project 1"
+                    loading="lazy"
+                    class="project-img"
+                    />
+                    <div class="project-details container col">
+                        <div class="img-details">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                            ratione vel inventore labore commodi modi quos culpa aut saepe!
+                            Alias!</p>
+                            <i>Java</i>
+                            <a href="#" target="_blank" class="project-link">Github link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container webDev">
+                    <img
+                    src="assets/images/expenseTracker.png"
+                    alt="project 1"
+                    loading="lazy"
+                    class="project-img"
+                    />
+                    <div class="project-details container col">
+                        <div class="img-details">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                            ratione vel inventore labore commodi modi quos culpa aut saepe!
+                            Alias!</p>
+                            <i>Java</i>
+                            <a href="#" target="_blank" class="project-link">Github link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        </section>
-
-    <!-- Social accounts - Fixed to the right -->
+    </section>
 
     <!-- Scroll to top -->
 
@@ -255,12 +274,9 @@
         <div>
             <small><p id="copyright">Design heavily inspired by Christine Nguyen</p></small>
         </div>
-        <div>
-            <small>&copy; 2024 carl</small>
-        </div>
     </footer>
 
-        <!-- Website scripts -->
+    <!-- Website scripts -->
 
     </body>
 
