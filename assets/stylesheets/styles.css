@@ -303,15 +303,95 @@ nav ul li {
 }
 
 .filter-button:hover {
-    color: white;
+    color: #fbf5f2;
     background-color: var(--secondary-color);
 }
 
-.project-container {
+.projects {
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin: 5%;
+}
+
+.project-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.flavor-text {
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fbf5f2;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity .3s, visibility .4s;
+    border-radius: 8px;
+}
+
+.projects:hover .flavor-text {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.flavor-text:hover {
+    opacity: 1;
+}
+
+.img-details {
+	transition: .5s;
+	color: var(--secondary-color);
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.img-details i, .img-details p, .img-details a {
+	font-family: var(--font-family);
+	text-decoration: none;
+	font-weight: 200;
+	line-height: 24px;
+}
+
+.img-details p {
+    margin-top: 5px;
+    font-size: small;
+    max-height: 150px;
+    overflow-y: auto;
+
+    /* properties below may only work in firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #fbf5f2;
+}
+
+/* properties for all other webkit browsers */
+.img-details p::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fbf5f2;
+}
+
+.img-details p::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.img-details i, .img-details a {
+    font-size: 12px;
+}
+
+.img-details:hover {
+    opacity: 1;
 }
 
 /* Footer */
