@@ -86,6 +86,7 @@ a:hover {
 /* Navigaton bar */
 nav {
     position: fixed;
+    top: -90px;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -118,7 +119,7 @@ nav ul {
 }
 
 nav ul li {
-    font-weight: var(--bold-font);
+    font-weight: 300;
 }
 
 /* Hero Section */
@@ -271,12 +272,20 @@ nav ul li {
     height: 11.25rem;
 }
 
+.set a:link {
+    cursor: default;
+}
+
 .icon-card {
     background-color: #fbf5f2;
     border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
+    box-shadow: none;
     padding: 20px;
     margin: 10px;
+}
+
+.icon-card:hover, element:active {
+    box-shadow: 0 0 30px var(--secondary-color);
 }
 
 /* Project Section */

@@ -1,14 +1,11 @@
 
 // navigation bar behavior, not fully optimized just yet, but a start
-var prevScrollpos = window.scrollY;
 window.onscroll = function scrollFunction() {
-    var currentScrollPos = window.scrollY;
-    if (prevScrollpos > 820) {
-        document.getElementById("navbar").style.top = "0"
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        document.getElementById("navbar").style.top = "0";
     } else {
-        document.getElementById("navbar").style.top = "-90px"
+        document.getElementById("navbar").style.top = "-90px";
     }
-    prevScrollpos = currentScrollPos;
 }
 
 // filter buttons
