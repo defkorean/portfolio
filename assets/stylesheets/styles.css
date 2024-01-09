@@ -155,7 +155,7 @@ nav ul li {
     width:500px;
 }
 
-.arrow {
+#down-arrow {
 	border: solid black;
 	border-color: #575757;
 	border-width: 0 3px 3px 0;
@@ -165,13 +165,20 @@ nav ul li {
   	-webkit-transform: rotate(45deg);
   	transition: 0.3s;
   	animation: bounce 3s infinite;
-  	margin: 20px;
+  	margin-top: 70vh;
+    position: fixed;
 }
 
-.arrow:hover {
+#down-arrow:hover {
 	-webkit-animation-play-state: paused;
 	opacity: 60%;
 	transform: scale(1.25) rotate(45deg);
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
 }
 
 @keyframes bounce {
