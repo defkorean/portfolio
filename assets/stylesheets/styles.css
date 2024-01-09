@@ -170,7 +170,6 @@ nav ul li {
 }
 
 #down-arrow:hover {
-	-webkit-animation-play-state: paused;
 	opacity: 60%;
 	transform: scale(1.25) rotate(45deg);
 }
