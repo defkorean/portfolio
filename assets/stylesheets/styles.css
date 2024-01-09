@@ -31,11 +31,7 @@ html, body {
     margin: 0;
 }
 
-h1 {
-    font-weight: 300;
-}
-
-/* CSS Resets */
+/* some CSS rules are from Christine Nguyen and Kolade Chris */
 * {
     margin: 0;
     padding: 0;
@@ -145,10 +141,11 @@ nav ul li {
     margin-bottom: 2%;
 }
 
-#hero-text {
+#app {
     letter-spacing: 2px;
     max-width: 100%;
     font-size: 100%;
+    font-family: var(--font-family);
 }
 
 #hero-img {
@@ -156,8 +153,8 @@ nav ul li {
 }
 
 #down-arrow {
-	border: solid black;
-	border-color: #575757;
+	border: solid var(--secondary-color);
+	border-color: var(--secondary-color);
 	border-width: 0 3px 3px 0;
 	display: flex;
 	padding: 10px;

@@ -16,7 +16,7 @@ window.onscroll = function scrollFunction() {
 }
 
 // filter buttons
-// source: https://www.w3schools.com/howto/howto_js_filter_elements.asp
+// credits to https://www.w3schools.com/howto/howto_js_filter_elements.asp
 
 filterSelection("all")
 function filterSelection(c) {
@@ -62,3 +62,37 @@ for (var i = 0; i < btns.length; i++) {
     console.log(current);
   });
 }
+
+// credits to https://github.com/tameemsafi/typewriterjs
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hello World!')
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('Kermit was originally here!')
+    .deleteAll()
+    .typeString('but because i don\'t want to get sued')
+    .deleteAll()
+    .typeString('Mickey is here instead!')
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('main color palette: #eddcd2')
+    .pauseFor(300)
+    .deleteChars(6)
+    .typeString('cb997e')
+    .pauseFor(300)
+    .deleteChars(6)
+    .pauseFor(300)
+    .typeString('6a6a5d')
+    .pauseFor(300)
+    .deleteChars(6)
+    .typeString('fbf5f2')
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('I learned Procreate for the project icons!')
+    .pauseFor(500)
+    .start();
