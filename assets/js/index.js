@@ -1,13 +1,17 @@
-
 // navigation bar behavior, not fully optimized just yet, but a start
 window.onscroll = function scrollFunction() {
     var scrollPosition = document.documentElement.scrollTop || window.scrollY;
     var arrow = document.getElementById('down-arrow');
-    if (scrollPosition > 800) {
+    if (window.innerWidth >= 720) {
+      if (scrollPosition > 800) {
         document.getElementById("navbar").style.top = "0";
+      } else {
+          document.getElementById("navbar").style.top = "-90px";
+      }
     } else {
-        document.getElementById("navbar").style.top = "-90px";
+      navbar.style.top = "0";
     }
+    
     if (scrollPosition >= 1) {
         arrow.classList.add('fade');
     } else {
