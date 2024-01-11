@@ -494,7 +494,7 @@ nav ul li {
 
     /* navigation bar */
     nav {
-        padding: 6rem 1rem;
+        padding: 1rem 1rem;
         padding-bottom: 1rem;
     }
 
@@ -537,7 +537,7 @@ nav ul li {
 
     /* hero section */
     #hero-img {
-        width: 200%;
+        width: 100%;
     }
 
     .hero-landing {
@@ -549,7 +549,17 @@ nav ul li {
     }
     
     #down-arrow {
-        margin-top: 40vh; 
+        border: solid var(--secondary-color);
+        border-color: var(--secondary-color);
+        border-width: 0 3px 3px 0;
+        display: flex;
+        padding: 10px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: 0.3s;
+        animation: bounce 3s infinite;
+        margin-top: 40vh;
+        position: fixed;    
     }
 
     #about h1 {
