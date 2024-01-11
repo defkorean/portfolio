@@ -551,6 +551,11 @@ nav ul li {
         font-size: 250%; 
     }
 
+    #down-arrow {
+        display: none;
+    }
+    
+    /* about section */
     #about h1 {
         font-size: 24px; 
     }
