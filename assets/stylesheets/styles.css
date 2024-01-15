@@ -585,12 +585,12 @@ nav ul li {
 
     .icon-card {
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 5px;
     }
 
     .icon {
-        width: 50%;
-        height: auto;
+        width: 5.875rem;
+        height: 5.875rem;
     }
 
     #footer {
