@@ -502,17 +502,20 @@ nav ul li {
         position: fixed;
         background-color: #fbf5f2;
         flex-direction: column;
-        top: 86px;
+        top: 55px;
         left: 10%;
         width: 80%;
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
+        border-radius: 5px;
     }
 
     nav ul li {
         font-weight: 300;
-        margin: 8px;
+        padding: 5px;
+        margin-top: -10px;
+        margin-bottom: 3px;
     }
 
     nav h1 {
