@@ -197,6 +197,8 @@ nav ul li {
 #about-section {
     background-color: var(--secondary-color);
     padding-top: 80px;
+    min-height: 100vh;
+
 }
 
 .hidden-link:link {
@@ -297,6 +299,7 @@ nav ul li {
 #skills-section {
     background-color: var(--primary-color);
     padding-top: 80px;
+    min-height: 100vh;
 }
 
 .skills-wrapper img {
@@ -327,6 +330,7 @@ nav ul li {
 /* Project Section */
 #project-section {
     padding-top: 80px;
+    min-height: 100vh;
 }
 
 #buttons {
