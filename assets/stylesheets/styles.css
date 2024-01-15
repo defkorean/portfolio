@@ -414,6 +414,10 @@ nav ul li {
 	line-height: 24px;
 }
 
+.img-details h2 {
+    font-size: 22px;
+}
+
 .img-details p {
     margin-top: 5px;
     font-size: small;
