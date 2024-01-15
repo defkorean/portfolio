@@ -215,7 +215,7 @@ nav ul li {
 
 #pic-caption {
     margin: 0;
-    top: -660px;
+    bottom: -40px;
     position: relative;
     font-family: "Cascadia Code", sans-serif;
     color: #f8f8f2;
@@ -240,7 +240,7 @@ nav ul li {
     margin: 0;
     position: relative;
     right: 5px;
-    bottom: -60px;
+    bottom: -40px;
 	font-family: "Cascadia Code", sans-serif;
     color: #f8f8f2;
 }
@@ -566,10 +566,6 @@ nav ul li {
 
     #coffee-pic {
         height: 50vh;
-    }
-
-    #pic-caption {
-        top: -483px;
     }
 
     .filter-button {
